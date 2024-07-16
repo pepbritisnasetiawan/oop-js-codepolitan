@@ -131,3 +131,35 @@ class Color {
 }
 
 const skyColor = new Color(185, 243, 252, 'Sky');
+
+class Pet {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    makan() {
+    return `${this.name} lagi makan`;
+  }
+}
+
+class Cat extends Pet {
+    constructor(name, age, lives) {
+        super(name, age);
+        this.lives = lives;
+    }
+
+    meow() {
+        return `${this.name} mewoing`;
+    }
+}
+
+class Dog extends Pet {
+  constructor(name, age, lives) {
+    super(name, age);
+    this.lives = lives;
+  }
+  barking() {
+    return `${this.name} barking`;
+  }
+}
